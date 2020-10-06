@@ -8,7 +8,7 @@ public class Vehiculo {
 	private String nombre;						/*nombre vehiculo*/
 	private int precio;
 	private int peso;							/*cuanto pesa*/
-	private String tracción;
+	private String traccion;
 	
 	private Fabricante fabricante;
 	
@@ -22,7 +22,7 @@ public class Vehiculo {
 		this.nombre=nombre;
 		this.precio=precio;
 		this.peso=pp;
-		this.tracción=trac;
+		this.traccion=trac;
 		this.fabricante=fb;
 		Cvehiculo++;
 	}
@@ -44,8 +44,8 @@ public class Vehiculo {
 	public int getPeso() {
 		return peso;
 	}
-	public String getTracción() {
-		return tracción;
+	public String getTraccion() {
+		return traccion;
 	}
 	public Fabricante getFabricante() {
 		return fabricante;
@@ -68,8 +68,8 @@ public class Vehiculo {
 	public void setPeso(int peso) {
 		this.peso = peso;
 	}
-	public void setTracción(String tracción) {
-		this.tracción = tracción;
+	public void setTraccion(String tracción) {
+		this.traccion = tracción;
 	}
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
