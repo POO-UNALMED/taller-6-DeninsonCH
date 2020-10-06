@@ -5,11 +5,11 @@ public class Camioneta extends Vehiculo{
 	private boolean volco;
 	public static int Tcamioneta=0;
 	
-	
-	public Camioneta(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
-		super(placa, puerta, vel, nombre, precio, pp, trac, fb);
+
+	public Camioneta(String placa, int puertas, String nombre, int precio, int peso, Fabricante fabricante, boolean volco) {
+		super(placa, puertas, 90, nombre, precio, peso, "4X4", fabricante);
+		this.volco = volco;
 		Tcamioneta++;
-		
 	}
 
 	public boolean isVolco() {
@@ -20,13 +20,6 @@ public class Camioneta extends Vehiculo{
 		this.volco = volco;
 	}
 
-	public int getVelocidadMaxima() {
-		return velocidadMaxima;
-	}
-
-	public String getTraccion() {
-		return traccion;
-	}
 	public int setCamionetas() {
 		return Tcamioneta;
 	}
