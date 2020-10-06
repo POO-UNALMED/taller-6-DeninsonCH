@@ -3,8 +3,6 @@ package vehiculos;
 public class Camioneta extends Vehiculo{
 	
 	private boolean volco;
-	private final int velocidadMaxima = 90;
-	private final String traccion = "4X4";
 	public static int Tcamioneta=0;
 	
 	
