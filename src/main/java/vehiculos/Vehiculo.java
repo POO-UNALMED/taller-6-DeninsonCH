@@ -10,7 +10,7 @@ public class Vehiculo {
 	protected int peso;							/*cuanto pesa*/
 	protected String traccion;
 	
-	protected Fabricante fabricante;
+	public Fabricante fabricante;
 	
 	
 	/*construtores*/

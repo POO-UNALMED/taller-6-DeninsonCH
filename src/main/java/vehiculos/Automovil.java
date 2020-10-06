@@ -11,7 +11,7 @@ public class Automovil extends Vehiculo {
 		this.puestos = puestos;
 		cAutos++;
 	}
-	public int getcantidadAutomoviles() {
+	public int setAutomoviles() {
 		return cAutos;
 	}
 	public int getPuestos() {
