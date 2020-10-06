@@ -6,7 +6,6 @@ public class Pais {
 	private String nombre;
 	private int ventas;
 	static private ArrayList<Pais>paises=new ArrayList();
-	static private ArrayList<Pais>pvendedor=new ArrayList();
 	
 	public Pais(String nombre) {
 		this.nombre=nombre;
@@ -16,9 +15,11 @@ public class Pais {
 			for (int i = 0; i < paises.size(); i++) {
 				if(paises.get(i).getNombre().equals(nombre)){
 					paises.get(i).setVentas();
+					break;
 				}
 			}
 		}else {
+			a.setVentas();
 			paises.add(a);
 		}
 		
@@ -34,7 +35,7 @@ public class Pais {
 	}
 	public String paisMasVendedor() {
 		Pais max=null;
-		for (int i = 0; i < pvendedor.size(); i++) {
+		for (int i = 0; i < paises.size(); i++) {
 			if (paises.get(i).ventas > max.ventas) {
                 max = paises.get(i);
             }
@@ -51,7 +52,7 @@ public class Pais {
 	public boolean isPais(String p) {
 		boolean a=false;
 		for (int i = 0; i < paises.size(); i++) {
-			if(paises.get(i).getNombre().equals(nombre)){
+			if(paises.get(i).getNombre().equals(p)){
 				a= true;
 				break;
 			}else {
