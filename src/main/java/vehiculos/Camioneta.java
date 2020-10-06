@@ -5,7 +5,7 @@ public class Camioneta extends Vehiculo{
 	private boolean volco;
 	private final int velocidadMaxima = 90;
 	private final String traccion = "4X4";
-	private int Tcamioneta=0;
+	public static int Tcamioneta=0;
 	
 	
 	public Camioneta(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {

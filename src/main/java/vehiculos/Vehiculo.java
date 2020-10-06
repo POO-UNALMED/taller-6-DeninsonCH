@@ -83,9 +83,9 @@ public class Vehiculo {
 		Automovil a= null;
 		Camion b= null;
 		Camioneta c = null;
-		return("Automoviles:"+ a.setAutomoviles()+
-				"\nCamionetas:"+b.setCamiones()+
-				"\nCamiones:"+ c.setCamionetas());
+		return("Automoviles:"+ Automovil.cAutos+
+				"\nCamionetas:"+Camioneta.Tcamioneta+
+				"\nCamiones:"+ Camion.Tcamion);
 	}
 	
 	
