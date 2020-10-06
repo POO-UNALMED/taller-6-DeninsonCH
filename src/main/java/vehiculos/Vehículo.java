@@ -79,5 +79,14 @@ public class Vehículo {
 		return Cvehiculo;
 	}
 	
+	public String vehiculosPorTipo() {
+		Automóvil a= null;
+		Camion b= null;
+		Camioneta c = null;
+		return("Automoviles:"+ a.setAutomoviles()+
+				"\nCamionetas:"+b.setCamiones()+
+				"\nCamiones:"+ c.setCamionetas());
+	}
+	
 	
 }
