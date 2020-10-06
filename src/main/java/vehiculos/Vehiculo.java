@@ -10,18 +10,18 @@ public class Vehiculo {
 	protected int peso;							/*cuanto pesa*/
 	protected String traccion;
 	
-	private Fabricante fabricante;
+	protected Fabricante fabricante;
 	
 	
 	/*construtores*/
 	public void vehiculo(){Cvehiculo++;}
-	public Vehiculo(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
+	public Vehiculo(String placa,int puerta,int velocidadMaxima,String nombre,int precio,int peso,String trac,Fabricante fb) {
 		this.placa=placa;
 		this.puertas=puerta;
-		this.velocidadMaxima=vel;
+		this.velocidadMaxima=velocidadMaxima;
 		this.nombre=nombre;
 		this.precio=precio;
-		this.peso=pp;
+		this.peso=peso;
 		this.traccion=trac;
 		this.fabricante=fb;
 		Cvehiculo++;

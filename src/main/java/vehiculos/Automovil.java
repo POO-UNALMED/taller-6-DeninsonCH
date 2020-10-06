@@ -3,8 +3,6 @@ package vehiculos;
 public class Automovil extends Vehiculo {
 	
 	private int puestos;
-	private final int puertas= 4;
-	private final int velocidadMaxima = 120;
 	private final String traccion = "FWD";
 	private int Tautomovil=0;
 	

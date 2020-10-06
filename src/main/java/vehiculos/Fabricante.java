@@ -3,14 +3,12 @@ package vehiculos;
 import java.util.ArrayList;
 
 public class Fabricante {
-	protected String nombre;
-	protected Pais pais;
+	private String nombre;
+	private Pais pais;
 	private int ventas;
 	static private ArrayList<Fabricante>fabrican=new ArrayList();
 	
-	 public Fabricante(String nombre){
-	        this.nombre = nombre;
-	    }
+	
 	public Fabricante(String nom, Pais pais) {
 		this.nombre = nom;
 		this.pais = pais;
@@ -31,6 +29,9 @@ public class Fabricante {
 		}
 		
 	}
+	public Fabricante(String nombre){
+        this.nombre = nombre;
+    }
 
 
 	public String getNombre() {
