@@ -66,7 +66,7 @@ public class Fabricante {
 		}
 		return a;
 	}
-	public String fabricaMayorVentas() {
+	public static String fabricaMayorVentas() {
 		Fabricante max=null;
 		for (int i = 0; i < fabrican.size(); i++) {
 			if (fabrican.get(i).ventas > max.ventas) {

@@ -33,7 +33,7 @@ public class Pais {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String paisMasVendedor() {
+	public static String paisMasVendedor() {
 		Pais max=null;
 		for (int i = 0; i < paises.size(); i++) {
 			if (paises.get(i).ventas > max.ventas) {

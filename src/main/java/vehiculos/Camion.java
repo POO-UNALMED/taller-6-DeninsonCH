@@ -13,6 +13,10 @@ public class Camion extends Vehiculo{
 		
 		Tcamion++;
 	}
+	public Camion(String placa, String nombre, int precio, int pp, Fabricante fb, int c3) {
+		super(placa, 2, 80, nombre, precio, pp, "4X2", fb);
+	}
+	
 	public void setEjes(int eje){
 		this.ejes=eje;
 	}
