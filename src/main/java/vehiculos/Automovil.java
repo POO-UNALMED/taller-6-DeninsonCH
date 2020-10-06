@@ -10,8 +10,15 @@ public class Automovil extends Vehiculo {
 	
 	
 	public Automovil(String placa,String nombre,int precio,int peso,Fabricante fabricante,int puestos) {
-		super(placa, puertas, velocidadMaxima,traccion,nombre, precio, peso, fabricante, puestos);
-		// TODO Auto-generated constructor stub
+		this.puestos = puestos;
+	    puertas = 4;
+	    velocidadMaxima = 100;
+	    traccion = "FWD";
+	    this.peso = peso;
+	    this.placa = placa;
+	    this.nombre = nombre;
+	    this.precio = precio;
+	    this.fabricante = fabricante;
 		Tautomovil++;
 	}
 	

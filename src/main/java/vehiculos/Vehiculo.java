@@ -14,7 +14,7 @@ public class Vehiculo {
 	
 	
 	/*construtores*/
-	public void vehiculo(){this.Cvehiculo=Cvehiculo;}
+	public void vehiculo(){Cvehiculo++;}
 	public Vehiculo(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
 		this.placa=placa;
 		this.puertas=puerta;
