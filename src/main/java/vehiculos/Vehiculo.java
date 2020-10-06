@@ -85,7 +85,7 @@ public class Vehiculo {
 		Camioneta c = null;
 		return("Automoviles:"+ Automovil.cAutos+
 				"\nCamionetas:"+Camioneta.Tcamioneta+
-				"\nCamiones:"+ Camion.Tcamion);
+				"\nCamiones:"+ Camion.cCamiones);
 	}
 	
 	
