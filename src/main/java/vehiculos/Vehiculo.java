@@ -14,7 +14,7 @@ public class Vehiculo {
 	
 	
 	/*construtores*/
-	public void vehículo(){this.Cvehiculo=Cvehiculo;}
+	public void vehiculo(){this.Cvehiculo=Cvehiculo;}
 	public Vehiculo(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
 		this.placa=placa;
 		this.puertas=puerta;
@@ -68,8 +68,8 @@ public class Vehiculo {
 	public void setPeso(int peso) {
 		this.peso = peso;
 	}
-	public void setTraccion(String tracción) {
-		this.traccion = tracción;
+	public void setTraccion(String traccion) {
+		this.traccion = traccion;
 	}
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
