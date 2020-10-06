@@ -3,81 +3,47 @@ package vehiculos;
 import java.util.ArrayList;
 
 public class Fabricante {
-	private String nombre;
-	private Pais pais;
-	private int ventas;
-	static private ArrayList<Fabricante>fabrican=new ArrayList();
+	public String nombre;
+	public Pais pais;
+	static ArrayList <Fabricante> fabricantes=new ArrayList <Fabricante>();
 	
-	
-	public Fabricante(String nom, Pais pais) {
-		this.nombre = nom;
+	public Fabricante(String nombre, Pais pais) {
+		this.nombre = nombre;
 		this.pais = pais;
-		
-		Fabricante f = new Fabricante(nom,pais);
-		
-		if(isfabri(nom)) {
-			for (int i = 0; i < fabrican.size(); i++) {
-				if(fabrican.get(i).getNombre().equals(nom)){
-					fabrican.get(i).setVentas();
-					break;
-				}
-			}
-		}else {
-			f.setVentas();
-			fabrican.add(f);
-			
-		}
+		fabricantes.add(this);
 		
 	}
-	public Fabricante(String nombre){
-        this.nombre = nombre;
-    }
-
-
+	
 	public String getNombre() {
 		return nombre;
 	}
-
-
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
-
 	public Pais getPais() {
 		return pais;
 	}
-
-
 	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
 	
-	public void setVentas() {
-		this.ventas=ventas++;
-	}
-	
-	public boolean isfabri(String fa) {
-		boolean a=false;
-		for (int i = 0; i < fabrican.size(); i++) {
-			if(fabrican.get(i).getNombre().equals(fa)){
-				a= true;
-				break;
-			}else {
-				a= false;
+	public static Fabricante fabricaMayorVentas() {
+		int contador=0;
+		int mayor=0;
+		Fabricante fabricante=null;
+		for (int i=0; i<fabricantes.size();i++) {
+			for (int j=0; j<fabricantes.size();j++) {
+				if(fabricantes.get(i)==fabricantes.get(j)) {
+					contador++;
+				}
 			}
+			if (contador>mayor) {
+				mayor=contador;
+				fabricante=fabricantes.get(i);
+			}
+			contador=0;
 		}
-		return a;
-	}
-	public static String fabricaMayorVentas() {
-		Fabricante max=null;
-		for (int i = 0; i < fabrican.size(); i++) {
-			if (fabrican.get(i).ventas > max.ventas) {
-                max = fabrican.get(i);
-            }
-		}
-		return max.getNombre();
+		return fabricante;
 		
 	}
-	
 }
