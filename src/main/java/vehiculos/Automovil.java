@@ -1,47 +1,26 @@
 package vehiculos;
 
 public class Automovil extends Vehiculo {
+	public int puestos;
+	public static int cAutos=0;
+
 	
-	private int puestos;
-	private int Tautomovil=0;
-	
-	
-	public Automovil(String placa,String nombre,int precio,int peso,Fabricante fabricante,int puestos) {
+
+	public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos) {
+		super(placa, 4, 100, nombre, precio, peso, "FWD", fabricante);
 		this.puestos = puestos;
-	    puertas = 4;
-	    velocidadMaxima = 100;
-	    traccion = "FWD";
-	    this.peso = peso;
-	    this.placa = placa;
-	    this.nombre = nombre;
-	    this.precio = precio;
-	    this.fabricante = fabricante;
-		Tautomovil++;
+		cAutos++;
 	}
-	
+	public int getcantidadAutomoviles() {
+		return cAutos;
+	}
 	public int getPuestos() {
 		return puestos;
 	}
+
 	public void setPuestos(int puestos) {
 		this.puestos = puestos;
 	}
-	public int getPuertas() {
-		return puertas;
-	}
-	public int getVelocidadMaxima() {
-		return velocidadMaxima;
-	}
-	public String getTraccion() {
-		return traccion;
-	}
-	public int setAutomoviles() {
-		return Tautomovil;
-	}
-
-
-
-	
-
 	
 
 }

@@ -1,7 +1,7 @@
 package vehiculos;
 
 public class Vehiculo {
-	protected int Cvehiculo = 0;
+	static int Cvehiculo = 0;
 	protected String placa;
 	protected int puertas;
 	protected int velocidadMaxima;
