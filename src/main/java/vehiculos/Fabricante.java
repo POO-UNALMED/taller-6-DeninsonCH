@@ -9,5 +9,25 @@ public class Fabricante {
 		this.nombre = nombre;
 		this.pais = pais;
 	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+	public País getPais() {
+		return pais;
+	}
+
+
+	public void setPais(País pais) {
+		this.pais = pais;
+	}
 	
 }

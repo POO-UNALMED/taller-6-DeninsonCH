@@ -12,6 +12,27 @@ public class Automóvil extends Vehículo {
 		super(placa, puerta, vel, nombre, precio, pp, trac, fb);
 		// TODO Auto-generated constructor stub
 	}
+	
+	public int getPuestos() {
+		return puestos;
+	}
+	public void setPuestos(int puestos) {
+		this.puestos = puestos;
+	}
+	public int getPuertas() {
+		return puertas;
+	}
+	public int getVelocidadMaxima() {
+		return velocidadMaxima;
+	}
+	public String getTracción() {
+		return tracción;
+	}
+
+
+
+
+	
 
 	
 

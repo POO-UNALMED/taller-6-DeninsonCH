@@ -11,4 +11,22 @@ public class Camioneta extends Vehículo{
 		// TODO Auto-generated constructor stub
 	}
 
+	public boolean isVolco() {
+		return volco;
+	}
+
+	public void setVolco(boolean volco) {
+		this.volco = volco;
+	}
+
+	public int getVelocidadMaxima() {
+		return velocidadMaxima;
+	}
+
+	public String getTraccion() {
+		return traccion;
+	}
+	
+	
+
 }
