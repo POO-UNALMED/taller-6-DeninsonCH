@@ -6,7 +6,7 @@ public class Automóvil extends Vehículo {
 	private final int puertas= 4;
 	private final int velocidadMaxima = 120;
 	private final String tracción = "FWD";
-	
+	private int Tautomovil=0;
 	
 	public Automóvil(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
 		super(placa, puerta, vel, nombre, precio, pp, trac, fb);
@@ -28,7 +28,9 @@ public class Automóvil extends Vehículo {
 	public String getTracción() {
 		return tracción;
 	}
-
+	public int setAutomoviles() {
+		return Tautomovil;
+	}
 
 
 

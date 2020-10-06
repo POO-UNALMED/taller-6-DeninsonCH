@@ -1,6 +1,7 @@
 package vehiculos;
 
 public class Vehículo {
+	private int Cvehiculo = 0;
 	private String placa;
 	private int puertas;
 	private int velocidadMaxima;
@@ -23,6 +24,7 @@ public class Vehículo {
 		this.peso=pp;
 		this.tracción=trac;
 		this.fabricante=fb;
+		Cvehiculo++;
 	}
 	public String getPlaca() {
 		return placa;
@@ -72,5 +74,10 @@ public class Vehículo {
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
 	}
+	
+	public int getCantidadVehiculos() {
+		return Cvehiculo;
+	}
+	
 	
 }
