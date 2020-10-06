@@ -8,9 +8,6 @@ public class Automovil extends Vehiculo {
 	private final String tracción = "FWD";
 	private int Tautomovil=0;
 	
-	public Automovil() {
-		this.Tautomovil=Tautomovil;
-	}
 	
 	public Automovil(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
 		super(placa, puerta, vel, nombre, precio, pp, trac, fb);
