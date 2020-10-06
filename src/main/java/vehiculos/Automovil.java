@@ -9,8 +9,8 @@ public class Automovil extends Vehiculo {
 	private int Tautomovil=0;
 	
 	
-	public Automovil(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
-		super(placa, puerta, vel, nombre, precio, pp, trac, fb);
+	public Automovil(String placa,String nombre,int precio,int peso,Fabricante fabricante,int puestos) {
+		super(placa, puertas, velocidadMaxima,traccion,nombre, precio, peso, fabricante, puestos);
 		// TODO Auto-generated constructor stub
 		Tautomovil++;
 	}

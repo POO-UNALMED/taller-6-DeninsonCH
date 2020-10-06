@@ -1,14 +1,14 @@
 package vehiculos;
 
 public class Vehiculo {
-	private int Cvehiculo = 0;
-	private String placa;
-	private int puertas;
-	private int velocidadMaxima;
-	private String nombre;						/*nombre vehiculo*/
-	private int precio;
-	private int peso;							/*cuanto pesa*/
-	private String traccion;
+	protected int Cvehiculo = 0;
+	protected String placa;
+	protected int puertas;
+	protected int velocidadMaxima;
+	protected String nombre;						/*nombre vehiculo*/
+	protected int precio;
+	protected int peso;							/*cuanto pesa*/
+	protected String traccion;
 	
 	private Fabricante fabricante;
 	
