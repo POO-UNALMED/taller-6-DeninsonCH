@@ -1,9 +1,9 @@
 package vehiculos;
 
-public class País {
+public class Pais {
 	private String nombre;
 	
-	public País(String nombre) {
+	public Pais(String nombre) {
 		this.nombre=nombre;
 	}
 

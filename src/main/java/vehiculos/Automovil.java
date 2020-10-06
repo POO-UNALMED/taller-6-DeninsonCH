@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Automóvil extends Vehículo {
+public class Automovil extends Vehiculo {
 	
 	private int puestos;
 	private final int puertas= 4;
@@ -8,7 +8,11 @@ public class Automóvil extends Vehículo {
 	private final String tracción = "FWD";
 	private int Tautomovil=0;
 	
-	public Automóvil(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
+	public Automovil() {
+		this.Tautomovil=Tautomovil;
+	}
+	
+	public Automovil(String placa, int puerta, int vel, String nombre, int precio, int pp, String trac, Fabricante fb) {
 		super(placa, puerta, vel, nombre, precio, pp, trac, fb);
 		// TODO Auto-generated constructor stub
 		Tautomovil++;

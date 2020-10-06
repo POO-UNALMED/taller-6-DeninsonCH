@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Camioneta extends Vehículo{
+public class Camioneta extends Vehiculo{
 	
 	private boolean volco;
 	private final int velocidadMaxima = 90;
